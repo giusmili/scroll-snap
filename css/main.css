@@ -1,0 +1,92 @@
+/* only theme css */
+ul,ol{
+   list-style-type: none;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    transition: all .6s ease-in-out;
+}
+img{
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+/* scrollbar c'est ici */
+*{
+    /* ff */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+/* webkit */
+*::-webkit-scrollbar{
+    width: .2rem;
+}
+
+header h1{
+    text-align: center;
+    
+}
+main{
+    max-width: 120rem;
+    margin: 5rem auto;
+}
+.darkmode{
+    background-color: #222;
+    color: #fff;
+}
+/* snap scroll css */
+.scroll-container,
+.scroll-area {
+  width: auto;
+  height: 100vh;
+  font-size: 60px;
+  list-style: none;
+}
+
+.scroll-container {
+  
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+   
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+.scroll-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+}
+/* .scroll-area:nth-of-type(1) {
+    background: #49b293;
+  }
+  
+  .scroll-area:nth-of-type(2) {
+    background: #c94e4b;
+  }
+  
+  .scroll-area:nth-of-type(3) {
+    background: #4cc1be;
+  }
+  
+  .scroll-area:nth-of-type(4) {
+    background: #8360A6;
+  }
+   */
+
+footer *{
+    text-align: center;
+}
