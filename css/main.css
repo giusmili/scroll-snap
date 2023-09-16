@@ -81,14 +81,25 @@ section p{
   container-name: section;
   text-align: justify;
 }
-@media screen and (max-width: 100rem){
-  section{
-    margin: 0 1%;
+@container (min-width: 140rem) {
+  section p{
+    container-type: inline-size; 
   }
+  
 }
-@container section (min-width: 76.0rem) {
+
+@media screen and (min-width: 41.2rem){
+
+  section p{
+    container-type: inline-size;
+ 
+   
+  }
+  
+}
+@media screen and (orientation: landscape) {
  section p {
-  width: auto;
+  container-type: normal;
  
   }
 }
