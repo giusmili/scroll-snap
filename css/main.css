@@ -31,7 +31,7 @@ header h1{
     
 }
 main{
-    max-width: 120rem;
+    max-width: 140rem;
     margin: 5rem auto;
 }
 .darkmode{
@@ -80,6 +80,11 @@ section p{
   container-type: inline-size; /* block-size */
   container-name: section;
   text-align: justify;
+}
+@media screen and (max-width: 100rem){
+  section{
+    margin: 0 1%;
+  }
 }
 @container section (min-width: 76.0rem) {
  section p {
